@@ -84,12 +84,12 @@ WSGI_APPLICATION = 'aceAdventuresAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'aceAdventuresdb',
-        'USER': 'huzefa',
-        'PASSWORD': 'MHz#112358',
-        'HOST': '208.109.224.243',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ace_db',
+        'USER': 'ace_db_user',
+        'PASSWORD': 'bIZxWEIksSPvAoXmaJeHin4NJYkf4RnX',
+        'HOST': 'dpg-ceos6bta4991ihh9l1og-a.singapore-postgres.render.com',
+        'PORT': '5432',
     }
 }
 
