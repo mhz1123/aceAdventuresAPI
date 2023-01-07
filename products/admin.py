@@ -4,7 +4,7 @@ from .models import Product, SpareParts
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['product_id', 'product_name','product_price', 'product_img_url', 'product_spec', 'inStock']
+    list_display = ['product_id', 'product_name','product_price', 'product_img_url','product_image', 'product_spec', 'inStock']
 
 @admin.register(SpareParts)
 class SparePartsAdmin(admin.ModelAdmin):

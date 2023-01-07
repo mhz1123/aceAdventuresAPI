@@ -17,7 +17,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ['product_id', 'product_name', 'product_price', 'product_img_url', 'inStock']
+        fields = ['product_id', 'product_name', 'product_price', 'product_img_url', 'product_image', 'inStock']
 
 class SparePartsSerializer(serializers.ModelSerializer):
     class Meta:

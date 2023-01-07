@@ -84,12 +84,8 @@ WSGI_APPLICATION = 'aceAdventuresAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ace_db',
-        'USER': 'ace_db_user',
-        'PASSWORD': 'bIZxWEIksSPvAoXmaJeHin4NJYkf4RnX',
-        'HOST': 'dpg-ceos6bta4991ihh9l1og-a.singapore-postgres.render.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -132,7 +128,8 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
